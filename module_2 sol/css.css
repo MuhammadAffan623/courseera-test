@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202020;
+}
+
+
+
+.menu {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    flex: 1;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    margin: 10px;
+}
+
+.box1 {
+    background: darkred;
+}
+
+.box2 {
+    background: black;
+}
+
+.box3 {
+    background: darkturquoise;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .box3 {
+        flex-basis: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
